@@ -3,63 +3,110 @@
 <head>
   <meta charset="UTF-8">
   <title>Proloy Mukherjee | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f3f2ef;
+      color: #333;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      align-items: center;
+      background: white;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .header img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 20px;
+      border: 2px solid #0a66c2;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 26px;
+      color: #0a66c2;
+    }
+    .header h3 {
+      margin: 5px 0;
+      font-size: 16px;
+      font-weight: 400;
+      color: #555;
+    }
+    .header p a {
+      color: #0a66c2;
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    /* Sections */
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 0 15px;
+    }
+    section {
+      background: white;
+      padding: 20px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    section h2 {
+      margin-top: 0;
+      font-size: 20px;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 8px;
+      color: #0a66c2;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    /* Footer */
+    footer {
+      background: #0a66c2;
+      color: white;
+      text-align: center;
+      padding: 12px;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
-  <header class="main-header">
-    <div class="header-left">
-      <header style="display:flex;align-items:center;background:#003366;color:#fff;padding:20px;">
-  <!-- Use the relative path if the image is in the repo root -->
-  <img
-    src="1V0A2815.jpg"
-    alt="Proloy Mukherjee"
-    style="width:96px;height:96px;border-radius:50%;object-fit:cover;border:2px solid #fff;flex-shrink:0;margin-right:16px;display:block;"
-    width="96" height="96"
-  >
-  <!-- If the image isn't at the root, use the raw URL instead:
-  <img
-    src="https://raw.githubusercontent.com/Proloy1601/proloy.github.io/main/1V0A2815.jpg"
-    alt="Proloy Mukherjee"
-    style="width:96px;height:96px;border-radius:50%;object-fit:cover;border:2px solid #fff;flex-shrink:0;margin-right:16px;display:block;"
-    width="96" height="96"
-  >
-  -->
-  <div>
-    <h1 style="margin:0;font-size:28px;">Proloy Mukherjee</h1>
-    <h3 style="margin:4px 0 0;font-weight:400;font-size:16px;opacity:.9;">
-      Senior Azure DevOps Engineer | Cloud & Data Engineering | .NET Developer
-    </h3>
-    <p style="margin:8px 0 0;">
-      📍 Kolkata, India |
-      <a href="mailto:proloymukherjee50@gmail.com" style="color:#ffcc00;text-decoration:none;font-weight:600;">Email</a> |
-      <a href="https://www.linkedin.com/in/proloy-mukherjee-4b4319100/" target="_blank" style="color:#ffcc00;text-decoration:none;font-weight:600;">LinkedIn</a>
-    </p>
-  </div>
-</header>
 
-    </div>
-    <div class="header-right">
+  <!-- Header -->
+  <div class="header">
+    <img src="1V0A2815.jpg" alt="Proloy Mukherjee">
+    <div>
       <h1>Proloy Mukherjee</h1>
-      <h3>Senior Azure DevOps Engineer | Azure Cloud & Data Engineering | .NET Developer</h3>
-      <p>
-        📍 Kolkata, India | 
+      <h3>Senior Azure DevOps Engineer | Cloud & Data Engineering | .NET Developer</h3>
+      <p>📍 Kolkata, India | 
         <a href="mailto:proloymukherjee50@gmail.com">Email</a> | 
         <a href="https://www.linkedin.com/in/proloy-mukherjee-4b4319100/" target="_blank">LinkedIn</a>
       </p>
     </div>
-  </header>
+  </div>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Senior technology professional with 9+ years of experience in Azure DevOps, Data Engineering, and Cloud-Native Application Development.
-    Skilled in designing, developing, and automating large-scale solutions on Microsoft Azure for the banking, energy, and enterprise domains.
-    8× Microsoft Azure Certified | Scrum Fundamentals Certified.</p>
-  </section>
-
-  <section id="skills">
-    <h2>Core Skills</h2>
-    <ul>
-      <li>I am a Senior Azure DevOps Engineer and Cloud Application Developer with deep expertise in data engineering, cloud-native application development, and infrastructure automation. My experience spans across the banking domain and enterprise transformation projects, where I’ve delivered scalable, reliable, and innovative solutions on the Microsoft Azure platform.
+  <!-- Content -->
+  <div class="container">
+    
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I am a Senior Azure DevOps Engineer and Cloud Application Developer with deep expertise in data engineering, cloud-native application development, and infrastructure automation. My experience spans across the banking domain and enterprise transformation projects, where I’ve delivered scalable, reliable, and innovative solutions on the Microsoft Azure platform.
 
 In my current role, I lead a Data Engineering team, focusing on end-to-end automation of data ingestion into Azure Data Lake. I design and optimize data pipelines using Azure Data Factory, Databricks (PySpark), Python, SQL, and YAML-based CI/CD pipelines in Azure DevOps, ensuring seamless deployment, scalability, and high performance. I also leverage Apache Airflow and other Azure services to automate workflows and guarantee reliability.
 
@@ -69,10 +116,66 @@ My expertise extends across a wide range of Azure services, including App Servic
 
 Passionate about building future-ready systems, I thrive in Agile environments, collaborating with stakeholders and clients to align solutions with business goals. My work has also taken me onsite to Utrecht, Netherlands, where I partnered closely with clients to drive transformation and strengthen delivery outcomes.
 
-I’m committed to creating solutions that not only solve today’s challenges but also future-proof infrastructure and applications for long-term success.</li>
-      <li>Azure Data Factory, Databricks (PySpark), Airflow</li>
-      <li>Azure DevOps (YAML CI/CD), Terraform, GitHub</li>
-      <li>.NET Core, ASP.NET MVC, REST APIs, C#</li>
-      <li>Azure Services: Web Apps, Functions, VNets, Key Vault, AAD</li>
-    </ul>
-  </
+I’m committed to creating solutions that not only solve today’s challenges but also future-proof infrastructure and applications for long-term success.
+      </p>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <h3>Accenture (India) | Associate Manager</h3>
+      <p><em>Nov 2024 – Present</em></p>
+      <ul>
+        <li>Lead data engineering team delivering end-to-end automation of data ingestion into Azure Data Lake.</li>
+        <li>Designed scalable pipelines using ADF, Databricks, PySpark, Python, SQL.</li>
+        <li>Maintained CI/CD with YAML pipelines in Azure DevOps.</li>
+      </ul>
+      <h3>Accenture (India) | Application Development Team Lead</h3>
+      <p><em>Jan 2022 – Nov 2024</em></p>
+      <ul>
+        <li>Azure DevOps & Integration lead for banking app transformation.</li>
+        <li>Migrated APIs and data from on-premise to Azure PaaS.</li>
+      </ul>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Azure Data Factory, Databricks (PySpark), Airflow</li>
+        <li>Azure DevOps (YAML CI/CD), Terraform, GitHub</li>
+        <li>.NET Core, ASP.NET MVC, REST APIs, C#</li>
+        <li>Azure Services: Web Apps, Functions, VNets, Key Vault, AAD</li>
+      </ul>
+    </section>
+
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <p>AZ-400 | DP-203 | AZ-204 | AZ-303 | AZ-305 | AZ-900 | DP-900 | AI-900 | Scrum Fundamentals</p>
+    </section>
+
+    <section id="awards">
+      <h2>Awards & Recognition</h2>
+      <ul>
+        <li>Accenture Apex Award (2022, 2024)</li>
+        <li>Global Tech Innovation Contest – Top 200 (2022)</li>
+        <li>Capgemini Rising Star Award (2021)</li>
+        <li>Star Performer & Best Team Awards (TCS)</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        📧 <a href="mailto:proloymukherjee50@gmail.com">proloymukherjee50@gmail.com</a><br>
+        🔗 <a href="https://www.linkedin.com/in/proloy-mukherjee-4b4319100/" target="_blank">LinkedIn Profile</a>
+      </p>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Proloy Mukherjee</p>
+  </footer>
+
+</body>
+</html>
