@@ -22,12 +22,14 @@ body {
 }
 
 .profile-pic {
-  width: 120px;
+  width: 120px;         /* Small, fixed size */
   height: 120px;
-  border-radius: 50%;
+  border-radius: 50%;   /* Makes it circular */
   border: 3px solid white;
-  object-fit: cover;
+  object-fit: cover;    /* Ensures the face fits well */
+  display: block;
 }
+
 
 .header-right h1 {
   margin: 0;
