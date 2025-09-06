@@ -22,12 +22,14 @@ body {
 }
 
 .profile-pic {
-  width: 120px;         /* Small, fixed size */
-  height: 120px;
-  border-radius: 50%;   /* Makes it circular */
+  max-width: 120px;   /* Limit width */
+  max-height: 120px;  /* Limit height */
+  width: 120px;       /* Force width */
+  height: 120px;      /* Force height */
+  border-radius: 50%; /* Make it circular */
   border: 3px solid white;
-  object-fit: cover;    /* Ensures the face fits well */
-  display: block;
+  object-fit: cover;  /* Prevent stretching */
+  display: inline-block;
 }
 
 
