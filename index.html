@@ -6,6 +6,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
   <style>
     body {
       font-family: 'Roboto', sans-serif;
@@ -24,16 +26,16 @@
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
     .header img {
-      width: 100px;
-      height: 100px;
+      width: 110px;
+      height: 110px;
       border-radius: 50%;
       object-fit: cover;
       margin-right: 20px;
-      border: 2px solid #0a66c2;
+      border: 3px solid #0a66c2;
     }
     .header h1 {
       margin: 0;
-      font-size: 26px;
+      font-size: 28px;
       color: #0a66c2;
     }
     .header h3 {
@@ -47,8 +49,16 @@
       font-weight: 500;
       text-decoration: none;
     }
+    .contact-icons a {
+      margin-right: 15px;
+      font-size: 20px;
+      color: #0a66c2;
+    }
+    .contact-icons a:hover {
+      color: #004182;
+    }
 
-    /* Sections */
+    /* Container */
     .container {
       max-width: 900px;
       margin: 20px auto;
@@ -60,6 +70,11 @@
       margin-bottom: 15px;
       border-radius: 8px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    section:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
     }
     section h2 {
       margin-top: 0;
@@ -93,10 +108,11 @@
     <div>
       <h1>Proloy Mukherjee</h1>
       <h3>Senior Azure DevOps Engineer | Cloud & Data Engineering | .NET Developer</h3>
-      <p>📍 Kolkata, India | 
-        <a href="mailto:proloymukherjee50@gmail.com">Email</a> | 
-        <a href="https://www.linkedin.com/in/proloy-mukherjee-4b4319100/" target="_blank">LinkedIn</a>
-      </p>
+      <div class="contact-icons">
+        <a href="mailto:proloymukherjee50@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/proloy-mukherjee-4b4319100/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Proloy1601" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
     </div>
   </div>
 
@@ -104,28 +120,30 @@
   <div class="container">
     
     <section id="about">
-      <h2>About</h2>
+      <h2><i class="fas fa-user"></i> About</h2>
       <p>
         I am a Senior Azure DevOps Engineer and Cloud Application Developer with deep expertise in data engineering, cloud-native application development, and infrastructure automation. My experience spans across the banking domain and enterprise transformation projects, where I’ve delivered scalable, reliable, and innovative solutions on the Microsoft Azure platform.
-
-In my current role, I lead a Data Engineering team, focusing on end-to-end automation of data ingestion into Azure Data Lake. I design and optimize data pipelines using Azure Data Factory, Databricks (PySpark), Python, SQL, and YAML-based CI/CD pipelines in Azure DevOps, ensuring seamless deployment, scalability, and high performance. I also leverage Apache Airflow and other Azure services to automate workflows and guarantee reliability.
-
-Alongside my data engineering responsibilities, I am an experienced developer in cloud application and API development on the .NET stack. I design, develop, and deploy cloud-native applications using ASP.NET Core (2.1, 3.1), ASP.NET Framework (4.5, 4.7), microservices, MVC, and WebForms, while continuously innovating through application R&D. I have strong experience in C#, RDBMS and NoSQL databases, and a proven track record of integrating applications seamlessly into Azure ecosystems.
-
-My expertise extends across a wide range of Azure services, including App Services, Logic Apps, Functions, Web Apps, Virtual Machines, Managed Identities, Storage Accounts, VNets, Azure AD, SQL Databases, Load Balancers, and Key Vault. I also have solid knowledge of backup and retention architectures within Azure, ensuring secure and resilient cloud solutions.
-
-Passionate about building future-ready systems, I thrive in Agile environments, collaborating with stakeholders and clients to align solutions with business goals. My work has also taken me onsite to Utrecht, Netherlands, where I partnered closely with clients to drive transformation and strengthen delivery outcomes.
-
-I’m committed to creating solutions that not only solve today’s challenges but also future-proof infrastructure and applications for long-term success.
+      </p>
+      <p>
+        In my current role, I lead a Data Engineering team, focusing on end-to-end automation of data ingestion into Azure Data Lake. I design and optimize pipelines using Azure Data Factory, Databricks (PySpark), Python, SQL, and YAML-based CI/CD pipelines in Azure DevOps. I also leverage Apache Airflow and other Azure services to automate workflows and guarantee reliability.
+      </p>
+      <p>
+        Alongside my data engineering responsibilities, I am an experienced developer in cloud application and API development on the .NET stack. I design, develop, and deploy cloud-native applications using ASP.NET Core (2.1, 3.1), ASP.NET Framework (4.5, 4.7), microservices, MVC, and WebForms, while continuously innovating through application R&D.
+      </p>
+      <p>
+        My expertise spans Azure App Services, Logic Apps, Functions, Web Apps, VMs, Managed Identities, Storage Accounts, VNets, AAD, SQL Databases, Load Balancers, and Key Vault. I also have solid knowledge of backup and retention architectures within Azure.
+      </p>
+      <p>
+        Passionate about building future-ready systems, I thrive in Agile environments, collaborating with stakeholders and clients to align solutions with business goals. My work has also taken me onsite to Utrecht, Netherlands, where I partnered closely with clients to drive transformation and strengthen delivery outcomes.
       </p>
     </section>
 
     <section id="experience">
-      <h2>Experience</h2>
+      <h2><i class="fas fa-briefcase"></i> Experience</h2>
       <h3>Accenture (India) | Associate Manager</h3>
       <p><em>Nov 2024 – Present</em></p>
       <ul>
-        <li>Lead data engineering team delivering end-to-end automation of data ingestion into Azure Data Lake.</li>
+        <li>Lead data engineering team delivering end-to-end automation of Azure Data Lake ingestion.</li>
         <li>Designed scalable pipelines using ADF, Databricks, PySpark, Python, SQL.</li>
         <li>Maintained CI/CD with YAML pipelines in Azure DevOps.</li>
       </ul>
@@ -138,22 +156,22 @@ I’m committed to creating solutions that not only solve today’s challenges b
     </section>
 
     <section id="skills">
-      <h2>Skills</h2>
+      <h2><i class="fas fa-code"></i> Skills</h2>
       <ul>
-        <li>Azure Data Factory, Databricks (PySpark), Airflow</li>
-        <li>Azure DevOps (YAML CI/CD), Terraform, GitHub</li>
-        <li>.NET Core, ASP.NET MVC, REST APIs, C#</li>
-        <li>Azure Services: Web Apps, Functions, VNets, Key Vault, AAD</li>
+        <li><i class="fab fa-microsoft"></i> Azure Data Factory, Databricks (PySpark), Airflow</li>
+        <li><i class="fas fa-cogs"></i> Azure DevOps (YAML CI/CD), Terraform, GitHub</li>
+        <li><i class="fas fa-laptop-code"></i> .NET Core, ASP.NET MVC, REST APIs, C#</li>
+        <li><i class="fas fa-cloud"></i> Azure Services: Web Apps, Functions, VNets, Key Vault, AAD</li>
       </ul>
     </section>
 
     <section id="certifications">
-      <h2>Certifications</h2>
+      <h2><i class="fas fa-certificate"></i> Certifications</h2>
       <p>AZ-400 | DP-203 | AZ-204 | AZ-303 | AZ-305 | AZ-900 | DP-900 | AI-900 | Scrum Fundamentals</p>
     </section>
 
     <section id="awards">
-      <h2>Awards & Recognition</h2>
+      <h2><i class="fas fa-trophy"></i> Awards & Recognition</h2>
       <ul>
         <li>Accenture Apex Award (2022, 2024)</li>
         <li>Global Tech Innovation Contest – Top 200 (2022)</li>
@@ -163,10 +181,10 @@ I’m committed to creating solutions that not only solve today’s challenges b
     </section>
 
     <section id="contact">
-      <h2>Contact</h2>
+      <h2><i class="fas fa-address-book"></i> Contact</h2>
       <p>
-        📧 <a href="mailto:proloymukherjee50@gmail.com">proloymukherjee50@gmail.com</a><br>
-        🔗 <a href="https://www.linkedin.com/in/proloy-mukherjee-4b4319100/" target="_blank">LinkedIn Profile</a>
+        <a href="mailto:proloymukherjee50@gmail.com"><i class="fas fa-envelope"></i> proloymukherjee50@gmail.com</a><br>
+        <a href="https://www.linkedin.com/in/proloy-mukherjee-4b4319100/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn Profile</a>
       </p>
     </section>
 
